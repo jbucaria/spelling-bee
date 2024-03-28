@@ -84,7 +84,7 @@ body {
   display: flex;
   position: absolute;
   margin: 20px 0;
-  bottom: 10px;
+  bottom: 100px;
 }
 
 .navigation .nav-button {
@@ -110,7 +110,7 @@ body {
 }
 
 .validation {
-  top: 50px;
+  top: 0;
   position: absolute;
 }
 
