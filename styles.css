@@ -58,7 +58,7 @@ body {
   max-width: 300px;
 }
 
-#textInput {
+.textBox {
   margin: 10px;
   width: 90%;
   max-width: 300px;
@@ -69,12 +69,12 @@ body {
   border: 1px solid black;
 }
 
-#textInput::placeholder {
+.textBox ::placeholder {
   text-align: center;
   color: #333333;
 }
 
-#textInput:hover {
+.textBox:hover {
   border-color: #2c3e50;
   outline: none;
   box-shadow: 0 0 8px rgba(44, 62, 80, 0.6);
