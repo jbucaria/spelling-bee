@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  bottom: 10px;
+}
+
+.btn {
+  margin: 3px;
+  min-width: 100px;
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.card-body {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.input-style {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #333333;
+  width: 100%;
+  max-width: 300px;
+}
+
+#textInput,
+#addword {
+  margin: 10px;
+  width: 90%;
+  max-width: 300px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+}
+
+#textInput,
+::placeholder {
+  text-align: center;
+  color: #333333;
+}
+
+#textInput:hover {
+  border-color: #2c3e50;
+  outline: none;
+  box-shadow: 0 0 8px rgba(44, 62, 80, 0.6);
+}
+
+.navigation {
+  display: flex;
+  position: absolute;
+  margin: 20px 0;
+  bottom: 100px;
+}
+
+.navigation .nav-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.navigation p {
+  margin: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  border: solid green 1px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+}
+
+.validation {
+  top: 0;
+  position: absolute;
+}
+
+.-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+p {
+  font-size: 25px;
+}

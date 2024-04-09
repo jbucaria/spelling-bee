@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/6254b5bb38.js" crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" /> -->
+    <title>My Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-body">
+        <input type="text" id="addword" placeholder="Add Word" />
+        <input type="text" id="textInput" placeholder="Spell Word" />
+        <img src="" alt="" />
+
+        <div class="validation">
+          <p id="validationMessage"></p>
+        </div>
+
+        <div class="btn-container">
+          <button id="add-btn" class="-button">
+            <i class="icon-plus-sign icon-3x"></i>
+          </button>
+          <button id="refresh-btn" class="-button">
+            <i class="icon-refresh icon-3x"></i>
+          </button>
+          <button id="play-btn" class="-button">
+            <i class="icon-play-sign icon-3x"></i>
+          </button>
+          <button id="check-btn" class="-button">
+            <i class="icon-check icon-3x"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button id="prev" class="nav-button">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+
+        <p id="current"></p>
+
+        <button id="next" class="nav-button">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <!-- <script src="textToSpeech.js"></script> -->
+  </body>
+</html>
