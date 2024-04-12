@@ -136,17 +136,27 @@ p {
   }
 }
 
-.cursor-blinking {
+.textBox::selection {
+  background-color: transparent;
+}
+
+.textBox::before {
+  content: '|'; /* The cursor symbol */
   animation: cursor-blink 1s infinite;
 }
 
 #customKeyboard {
+  padding: 5px;
+  background-color: #cccccc;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   position: relative;
   bottom: 275px;
+  align-items: center;
 }
 
 .key {
-  box-shadow: #333333;
+  font-family: inherit;
+  border-radius: 3px;
 }
