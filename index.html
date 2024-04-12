@@ -13,8 +13,8 @@
   <body>
     <div class="container">
       <div class="card-body">
-        <input type="text" id="addword" placeholder="Add Word" />
-        <input type="text" id="textInput" placeholder="Spell Word" />
+        <input type="text" class="textBox" id="addword" placeholder="Add Word" />
+        <input type="text" class="textBox" id="textInput" placeholder="Spell Word" readonly />
         <img src="" alt="" />
 
         <div class="validation">
@@ -49,7 +49,45 @@
         </button>
       </div>
     </div>
-    <script src="main.js"></script>
-    <!-- <script src="textToSpeech.js"></script> -->
+
+    <div id="customKeyboard">
+      <div class="row">
+        <button class="key letter">Q</button>
+        <button class="key letter">W</button>
+        <button class="key letter">E</button>
+        <button class="key letter">R</button>
+        <button class="key letter">T</button>
+        <button class="key letter">Y</button>
+        <button class="key letter">U</button>
+        <button class="key letter">I</button>
+        <button class="key letter">O</button>
+        <button class="key letter">P</button>
+      </div>
+      <div class="row">
+        <button class="key letter">A</button>
+        <button class="key letter">S</button>
+        <button class="key letter">D</button>
+        <button class="key letter">F</button>
+        <button class="key letter">G</button>
+        <button class="key letter">H</button>
+        <button class="key letter">J</button>
+        <button class="key letter">K</button>
+        <button class="key letter">L</button>
+      </div>
+      <div class="row">
+        <button class="key caps">Caps</button>
+        <button class="key letter">Z</button>
+        <button class="key letter">X</button>
+        <button class="key letter">C</button>
+        <button class="key letter">V</button>
+        <button class="key letter">B</button>
+        <button class="key letter">N</button>
+        <button class="key letter">M</button>
+        <button class="key delete">Delete</button>
+      </div>
+      <div class="row"></div>
+    </div>
+
+    <script type="module" src="main.js"></script>
   </body>
 </html>

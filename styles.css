@@ -123,3 +123,30 @@ body {
 p {
   font-size: 25px;
 }
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor-blinking {
+  animation: cursor-blink 1s infinite;
+}
+
+#customKeyboard {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 275px;
+}
+
+.key {
+  box-shadow: #333333;
+}

@@ -1,3 +1,5 @@
+import { initializeKeyboard, inputText } from './keyboard.js'
+
 const playButton = document.getElementById('play-btn')
 const checkBtn = document.getElementById('check-btn')
 const resetBtn = document.getElementById('refresh-btn')
@@ -13,6 +15,18 @@ let currentIndex = 0
 let predeterminedWord = ''
 let words = []
 let fileLength = words.length
+
+initializeKeyboard()
+
+inputTextEl.addEventListener('click', () => {
+  inputTextEl.classList.add('active')
+  addWordEl.classList.remove('active')
+})
+
+addWordEl.addEventListener('click', () => {
+  inputTextEl.classList.remove('active')
+  addWordEl.classList.add('active')
+})
 
 addBtn.addEventListener('click', () => {
   const word = addWordEl.value
